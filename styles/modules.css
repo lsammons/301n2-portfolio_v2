@@ -1,5 +1,25 @@
-/* Laura Sammons Portfolio
-   Code Fellows 301
-   20160307
-   Modules, styles
-*/
+.template {
+  display: none;
+}
+
+.draft {
+  display: none;
+}
+
+.byline {
+  color: #777;
+}
+
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
