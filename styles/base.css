@@ -1,0 +1,67 @@
+/* General
+***********************/
+body {
+	font-size:16px;
+	line-height:22px;
+	height: auto;
+	font-family: Helvetica, sans-serif;
+	color:#373648;
+	background-color:#EEEFE5;
+  padding: 1em;
+}
+
+.wrapper {
+		width: 80%;
+		max-width:1200px;
+		margin:0px auto;
+}
+
+/* Nav Styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+img {
+  padding: 1em;
+}
+
+address {
+  display: inline-block;
+}
+
+hr {
+  margin: 1em;
+  width: 80%;
+}
+
+a:link {color: #d76713; text-decoration:none;}
+a:visited {color: #d76713; text-decoration:none;}
+a:hover {color: #813107; text-decoration:none;}
+a:active {color: #d76713; text-decoration:none;}
+
+h1 {
+	font-size:55px;
+	line-height:60px;
+	color:#D56724;
+}
+
+footer {
+  margin-top: 25px;
+}

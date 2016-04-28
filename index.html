@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sammons ~ Web Design and Development Portfolio</title>
+    <meta name="description" content="Web Design and Development Portfolio Website for Laura Sammons, Seattle WA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <main>
+        <div>
+          <header>
+            <h1>
+              Laura Sammons Portfolio
+            </h1>
+          </header>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="http://linkedin.com/in/laurasammons" target="_blank">LinkedIn</a></li>
+              <li><a href="http://github.com/lsammons" target="_blank">Github</a></li>
+            </ul>
+          </nav>
+          <section id="projects">
+            <article class="template" data-category="cat">
+              <!--div #theTemplate to hide template when rawData is pushed to page-->
+              <div id="theTemplate">
+                <header>
+                  <h1>Portfolio Project Title</h1>
+                  <div class="projectTitle">
+                    Created for <address><a href="www.google.com">Client Name</a></address>
+                    created on <time pubdate datetime="2000-01-01">Publish Time</time>
+                  </div>
+                </header>
+              </div>
+              <section class="article-body"></section>
+            </article>
+          </section>
+        </div>
+      </main>
+      <footer>
+        &copy;2016 Laura Sammons | Personal Portfolio | LinkedIn
+      </footer>
+    </div>
+
+    <!--JAVASCRIPT BELOW-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+      if (!window.jQuery) { document.write('<script src="./vendor/scripts/jquery/jquery-2.2.3.min.js"><\/script>'); }
+    </script>
+    <script src="./scripts/portfolioProject.js"></script>
+    <script src="./scripts/project.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
