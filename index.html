@@ -3,52 +3,94 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sammons ~ Web Design and Development Portfolio</title>
+    <title>02 Sammons ~ Web Design and Development Portfolio</title>
     <meta name="description" content="Web Design and Development Portfolio Website for Laura Sammons, Seattle WA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
   </head>
   <body>
+
     <div class="wrapper">
+
+      <header>
+        <h1>
+          <!--Laura Sammons Portfolio-->
+        </h1>
+      </header>
+
+      <nav class="main-nav">
+        <ul>
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li class="tab icon-home"  data-content="about"><a href="#"> Home</a></li>
+          <li class="tab icon-plus" data-content="projects"><a href="#"> Portfolio</a></li>
+          <li class="tab icon-rocket" data-content="contact"><a href="#"> Contact</a></li>
+          <li><a href="http://linkedin.com/in/laurasammons" target="_blank">LinkedIn</a></li>
+          <li><a href="http://github.com/lsammons" target="_blank">Github</a></li>
+        </ul>
+      </nav>
+
       <main>
-        <div>
+
+        <!--LAURA 3rd SECTION IS FOR ABOUT INFO -->
+        <section id="about" class="tab-content">
           <header>
-            <h1>
-              Laura Sammons Portfolio
-            </h1>
+            Welcome to My Portfolio
           </header>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="http://linkedin.com/in/laurasammons" target="_blank">LinkedIn</a></li>
-              <li><a href="http://github.com/lsammons" target="_blank">Github</a></li>
-            </ul>
-          </nav>
-          <section id="projects">
-            <article class="template" data-category="cat">
-              <!--div #theTemplate to hide template when rawData is pushed to page-->
-              <div id="theTemplate">
-                <header>
-                  <h1>Portfolio Project Title</h1>
-                  <div class="projectTitle">
-                    Created for <address><a href="www.google.com">Client Name</a></address>
-                    created on <time pubdate datetime="2000-01-01">Publish Time</time>
-                  </div>
-                </header>
-              </div>
-              <section class="article-body"></section>
-            </article>
+          <section>
+            <h3>My bio is fjdkls jklfdsjla jklfsadj.</h3>
+              <p>I like to:
+                <ul>
+                  <li>Code</li>
+                  <li>Sharing what I've learned</li>
+                  <li>Hanging with my family</li>
+                </ul>
+              </p>
           </section>
-        </div>
+        </section>
+
+        <!-- LAURA ADDED FROM OLD 02 -->
+        <!-- <section id="articles"> -->
+        <section id="projects" class="tab-content">
+          <div>
+            <ul id="filters">
+              <li>
+                <select id="category-filter">
+                  <option value="">-- Filter Projects by Category --</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+
+          <article class="template" data-category="cat">
+
+              <header>
+                <h1>Portfolio Project Title</h1>
+                <div class="projectTitle">
+                  Created for <address><a href="www.google.com">Client Name</a></address>
+                  created on <time pubdate datetime="2000-01-01">Publish Time</time>
+                </div>
+              </header>
+
+            <section class="article-body"></section>
+            <a href="#" class="read-on">Read on &rarr;</a>
+
+          </article>
+
+        </section><!--/#projects-->
+
       </main>
+
+
+
       <footer>
-        &copy;2016 Laura Sammons | Personal Portfolio | LinkedIn
+        &copy;2016 Laura Sammons
+        <li class="icon-power"><a href="http://linkedin.com/in/laurasammons" target="_blank"> LinkedIn</a></li>
+        <li class="icon-github"><a href="http://github.com/lsammons" target="_blank"> GitHub</a></li>
       </footer>
     </div>
 
@@ -59,6 +101,6 @@
     </script>
     <script src="./scripts/portfolioProject.js"></script>
     <script src="./scripts/project.js"></script>
-    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/projectView.js"></script>
   </body>
 </html>
