@@ -1,5 +1,5 @@
 # 301n2-portfolio_v2 Codefellows March/April 2016
-# Laura Sammons Web Development Portfolio
+# Laura Sammons Web Development Portfolio 06
 
 This portfolio site that will highlight my projects and interests, and showcase my skills to clients, employers, friends, and other developers.
   1. Using valid and semantic markup.
@@ -20,3 +20,5 @@ This portfolio site that will highlight my projects and interests, and showcase 
   11. Properly sized viewport, so that content fits my device's screen.
   12. Responsive navigation, fits any device (touch and click).
   13. Projects display one per row on mobile, viewer can see details easily.
+  14. Use a template to easily create multiple portfolio projects programmatically.
+  15. Use AJAX calls and JSON to hold project information.
