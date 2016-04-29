@@ -1,3 +1,12 @@
+/* FILTER STYLES*/
+#filters {
+  padding: 1em;
+  list-style-type:none;
+}
+#filters select {
+  width:30%;
+}
+
 .template {
   display: none;
 }
