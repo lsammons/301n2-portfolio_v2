@@ -10,12 +10,13 @@ function Project (opts) {
   this.body = opts.body;
 }
 
-// prototype function using jQuery to fill in the template with properties
+// Project prototype function uses jQuery to fill template with properties
 // from this particular Project instance.
 Project.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
+  $newProject.removeClass('template');
   $newProject.attr('data-category', this.category);
-  //Use jQuery to fill in the template with properties
+  // Use jQuery to fill in the template with properties
   // from this particular Project instance.
   $newProject.find('h1').html(this.title);
   $newProject.find('address a').html(this.author);
@@ -25,19 +26,15 @@ Project.prototype.toHtml = function() {
   $newProject.find('time[pubdate]').attr('title', this.publishedOn);
   // Display the date as a relative number of "days ago":
   $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
-  $newProject.append('<hr>');
-  // Cloned article is no longer a template, remove template class
-  // so new  project will show on page:
-  $('article').removeClass('template');
   return $newProject;
 };
 
-// Find how long ago, from today, this project was created.
+// Sorting projects, new to old
 rawData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-// Push each new project into an array
+// Push each new project into array
 rawData.forEach(function(ele) {
   projects.push(new Project(ele));
 });
