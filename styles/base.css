@@ -12,7 +12,7 @@ body {
 	max-width: 940px; /* body will not be wide than 940px */
   margin: 0 auto;
   padding: 0 5%; /*flex layout*/
-	border-top: 1px solid green;
+	/*border-top: 1px solid green;*/
 }
 a {
   text-decoration: none;
@@ -27,7 +27,6 @@ hr {
 }
 img {
   max-width: 100%; /*flex images*/
-	padding: 1em;
 }
 h3 {
   margin: 0 0 1em 0; /* bottom margin pushes down 1em */
@@ -62,6 +61,10 @@ header in mobile view - hamburger menu mouseover for screens less than 480 pixel
 	margin: -5px 0 0; /* negative top margin, brings h2 up closer to h1 */
 	font-weight: normal;
   font-size: 1.25em;
+}
+
+#wrapper {
+	border-top: solid black 1px;
 }
 
 
@@ -117,7 +120,7 @@ FILTER
 
 
 /**********************************
-TEMPLATE TEXT STYLES
+HANDLEBARS TEMPLATE TEXT STYLES
 ***********************************/
 
 .template {
@@ -131,9 +134,6 @@ article h3 {
 article p {
   margin: 0;
 }
-address {
-  display: inline-block;
-}
 
 
 
@@ -145,7 +145,24 @@ footer {
 	text-align: center;
 	padding: 25px 0 10px;
 	clear: both;
-	border-top: 1px solid green;
+	border-top: 1px solid black;
+}
+
+
+
+/**********************************
+HOME PAGE: PORTFOLIO
+***********************************/
+#projects article {
+  /*float: left;*/
+  width: 80%;
+  margin: 2.5%;
+  background-color: #f5f5f5;
+  color: #bdc3c7;
+}
+
+.article-body {
+	padding: 1em;
 }
 
 
@@ -165,37 +182,16 @@ section {
 
 
 
-/**********************************
-PAGE: PORTFOLIO
-***********************************/
-article.template {
-	margin: 0;
-  padding: 0;
-}
-
-#projects article {
-  /*float: left;*/
-  width: 80%;
-  margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
-}
-
-.article-body {
-	padding: 1em;
-}
-
-
 
 /**********************************
 COLORS
 ***********************************/
 body {
 	color:#373648;
-	background-color:#EEEFE5;  /* green */
 }
 
 h1 {
+	/* orange */
 	color:#D56724;
 }
 
@@ -206,4 +202,5 @@ a:active {color: #d76713;}
 
 /* colors for nav link */
 nav a:link, nav a:visited, a:active {color: #d76713;}
-nav a:hover, nav a:focus {color: #813107;} /* orange for hover state in nav */
+/* orange for hover state in nav */
+nav a:hover, nav a:focus {color: #813107;}
