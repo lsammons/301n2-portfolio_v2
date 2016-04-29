@@ -1,5 +1,7 @@
-/* General
+/**********************
+General
 ***********************/
+
 body {
 	font-size:16px;
 	line-height:22px;
@@ -8,35 +10,44 @@ body {
 	color:#373648;
 	background-color:#EEEFE5;
   padding: 1em;
-}
-
-.wrapper {
-		width: 80%;
-		max-width:1200px;
-		margin:0px auto;
+	width: 80%;
+	max-width:1000px;
+	margin:0px auto;
 }
 
 /* Nav Styles */
-ul {
+nav {
+	padding: 1em;
+	font-size: 1.4em;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
+nav li {
     float: left;
 }
 
-li a {
+nav li a {
     display: inline-block;
-    color: white;
+    /*color: white;*/
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
+/* Font styles */
+h1 {
+	color:#D56724;
+}
 
+#about {
+	border-top: 1px solid green;
+}
 
 img {
   padding: 1em;
@@ -56,12 +67,8 @@ a:visited {color: #d76713; text-decoration:none;}
 a:hover {color: #813107; text-decoration:none;}
 a:active {color: #d76713; text-decoration:none;}
 
-h1 {
-	font-size:55px;
-	line-height:60px;
-	color:#D56724;
-}
-
 footer {
-  margin-top: 25px;
+	border-top: 1px solid green;
+	padding: 2em;
+  margin-top: 3em;
 }
