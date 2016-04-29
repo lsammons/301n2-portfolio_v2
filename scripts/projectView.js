@@ -1,15 +1,18 @@
-// A view object, holds all functions for dynamic updates and project-related event handlers.
+// Configure a view object, to hold all my functions for dynamic updates
+//and project-related event handlers.
 var projectView = {};
 
+// populate the category filter on project page
 projectView.populateFilters = function() {
   $('article').each(function() {
     if (!$(this).hasClass('template')) {
+
       var val = $(this).find('address a').text();
       var optionTag = '<option value="' + val + '">' + val + '</option>';
-      $('#author-filter').append(optionTag);
 
       val = $(this).attr('data-category');
       optionTag = '<option value="' + val + '">' + val + '</option>';
+
       if ($('#category-filter option[value="' + val + '"]').length === 0) {
         $('#category-filter').append(optionTag);
       }
@@ -17,6 +20,7 @@ projectView.populateFilters = function() {
   });
 };
 
+// this function allows filter by category for projects
 projectView.handleCategoryFilter = function() {
   $('#category-filter').on('change', function() {
     if ($(this).val()) {
@@ -26,33 +30,38 @@ projectView.handleCategoryFilter = function() {
       $('article').fadeIn();
       $('article.template').hide();
     }
-    $('#author-filter').val('');
   });
 };
 
+/*  handles the main nav clicks and hides/shows content */
 projectView.handleMainNav = function() {
   $('.main-nav').on('click', '.tab', function(e) {
     $('.tab-content').hide();
     $('#' + $(this).data('content')).fadeIn();
   });
-  // Triggers a click on the first .tab element, to set up the home page.
+  // Let's now trigger a click on the first .tab element, to set up the page.
   $('.main-nav .tab:first').click();
 };
 
+//  teasers are the small blocks truncated for each project
 projectView.setTeasers = function() {
-  // Hides elements beyond the first 2 in any project body.
+  // Hide elements beyond the first 2 in any artcile body.
   $('.article-body *:nth-of-type(n+2)').hide();
-
-  $('#projects').on('click', 'a.read-on', function(e) {  // articles 5
+  // articles 5
+  $('#projects').on('click', 'a.read-on', function(e) {
     e.preventDefault();
     $(this).parent().find('*').fadeIn();
     $(this).hide();
   });
 };
 
-$(document).ready(function() {
+// initialize index page
+projectView.initIndexPage = function() {
+  Project.all.forEach(function(a){
+    $('#projects').append(a.toHtml());
+  });
   projectView.populateFilters();
   projectView.handleCategoryFilter();
   projectView.handleMainNav();
   projectView.setTeasers();
-});
+};
