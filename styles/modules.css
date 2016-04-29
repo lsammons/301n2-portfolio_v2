@@ -1,3 +1,15 @@
-/* MODULES ARE REPEATABLE CONTENT
-  place styles for project template in here
-*/
+/**********************************
+HANDLEBARS TEMPLATE TEXT STYLES
+***********************************/
+
+.template {
+  display: none;
+}
+article h3 {
+  color: #000;
+  font-size: 0.9em;
+  margin: 5px 0 5px 10px;
+}
+article p {
+  margin: 0;
+}
