@@ -3,38 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>02 Sammons ~ Web Design and Development Portfolio</title>
+    <title>03 Sammons ~ Web Developer</title>
     <meta name="description" content="Web Design and Development Portfolio Website for Laura Sammons, Seattle WA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Ubuntu:700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
   </head>
 
   <body>
-    <div class="wrapper">
+      <header class="site-header clearfix">
+        <section class="heading-group-h1">
+          <h1>Laura Sammons</h1>
+          <h2>web developer</h2>
+        </section>
 
-      <header>
-        <h1>Laura Sammons ~ Web Developer</h1>
+        <nav class="main-nav icon-menu">
+          <ul>
+            <li class="tab icon-home"  data-content="about"><a href="#"> About</a></li>
+            <li class="tab icon-plus" data-content="projects"><a href="#"> Portfolio</a></li>
+            <li class="icon-power"><a href="http://linkedin.com/in/laurasammons" target="_blank">LinkedIn</a></li>
+            <li class="icon-github"><a href="http://github.com/lsammons" target="_blank">Github</a></li>
+          </ul>
+        </nav>
       </header>
 
-      <nav class="main-nav">
-        <ul>
-          <li class="tab icon-home"  data-content="about"><a href="#"> About</a></li>
-          <li class="tab icon-plus" data-content="projects"><a href="#"> Portfolio</a></li>
-          <li class="icon-power"><a href="http://linkedin.com/in/laurasammons" target="_blank">LinkedIn</a></li>
-          <li class="icon-github"><a href="http://github.com/lsammons" target="_blank">Github</a></li>
-        </ul>
-      </nav>
-
+      <div id="wrapper">
       <main>
 
-        <!--LAURA 3rd SECTION IS FOR ABOUT INFO -->
         <section id="about" class="tab-content">
-          <header>
+          <header class="site-header clearfix">
             <h2>Welcome to My Portfolio!</h2>
           </header>
           <section>
@@ -65,8 +67,8 @@
               <header>
                 <h1>Portfolio Project Title</h1>
                 <div class="projectTitle">
-                  Created for <address><a href="www.google.com">Client Name</a></address>
-                  created on <time pubdate datetime="2000-01-01">Publish Time</time>
+                  Created for <address><a href="www.google.com">Client Name</a></address>,
+                  <time pubdate datetime="2000-01-01">Publish Time</time>
                 </div>
               </header>
             <section class="article-body"></section>
@@ -75,7 +77,7 @@
           </article>
         </section><!--/#projects-->
       </main>
-      <footer>
+      <footer class="clearfix">
         &copy;2016 Laura Sammons | Contact Info
       </footer>
     </div><!--/wrapper-->

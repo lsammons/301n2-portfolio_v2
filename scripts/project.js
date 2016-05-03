@@ -19,7 +19,7 @@ Project.prototype.toHtml = function() {
   // Use jQuery to fill in the template with properties
   // from this particular Project instance.
   $newProject.find('h1').html(this.title);
-  $newProject.find('address a').html(this.author);
+  $newProject.find('address a').html(this.category);
   $newProject.find('section.article-body').html(this.body);
   $newProject.find('address a').attr('href', this.authorUrl);
   // Include the publication date as a 'title' attribute to show on hover:
