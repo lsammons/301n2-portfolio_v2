@@ -51,9 +51,9 @@ LARGER THAN 901 PX - Desktop Styles
 @media only screen and (min-width: 901px) {
 
   .heading-group-h1 {
-  text-align: center;
-  padding: .1em .1em .1em 2em;
-  float: none;
+		text-align: center;
+    padding: .1em .1em .1em 2em;
+    float: none;
   }
 
   #projects article {
@@ -64,15 +64,15 @@ LARGER THAN 901 PX - Desktop Styles
     color: #bdc3c7;
   }
 
-  #aProject article {
-    width: 28.3333%;
-  }
+	#aProject article {
+	  width: 28.3333%;
+	}
 
-  #projects h4 {
-    font-size: 1.7em;
-    margin: 25px 0 10px 0;
-    padding-left: 25%;
-  }
+	#projects h4 {
+		font-size: 1.7em;
+		margin: 25px 0 10px 0;
+		padding-left: 25%;
+	}
 
   nav.main-nav.icon-menu::before {
     display: none;
@@ -84,12 +84,12 @@ LARGER THAN 901 PX - Desktop Styles
        margin-left: 10em;
   }
 
-  .main-nav li {
+ .main-nav li {
    display: inline-block;
    padding: 0 3em 0 0;
    list-style: none;
    clear: none;
    border-bottom: none;
-  }
+ }
 
 }
