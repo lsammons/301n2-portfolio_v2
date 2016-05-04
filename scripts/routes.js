@@ -4,6 +4,7 @@
 page('/', aboutController.index);
 page('/projects', projectController.index);
 page('/contact', contactController.index);
+page('/github', repoController.index);
 
 // activate page.js
 page();
