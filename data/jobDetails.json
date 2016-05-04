@@ -1,0 +1,29 @@
+[
+  {
+    "positionTitle":  "Web Developer",
+    "startDate":      "2016-04-15",
+    "endDate":        "2014-11-01",
+    "employer":       "Kaiser Permanente, The Permanente Medical Group",
+    "employerUrl":    "http://www.kp.org",
+    "location":       "Berkeley, CA",
+    "jobDescription": "<p>TPMG description goes here.</p>"
+  },
+  {
+    "positionTitle":  "Web Developer",
+    "startDate":      "2014-07-01",
+    "endDate":        "2014-10-31",
+    "employer":       "Global Wine Co",
+    "employerUrl":    "http://www.gwc.com",
+    "location":       "Richmond, CA",
+    "jobDescription": "<p>GWC description goes here.</p>"
+  },
+  {
+    "positionTitle":  "Web Developer",
+    "startDate":      "2012-04-15",
+    "endDate":        "2013-10-01",
+    "employer":       "The Swedish Foundation, Swedish Hospital",
+    "employerUrl":    "http://www.swedishfoundation.org",
+    "location":       "Seattle, WA",
+    "jobDescription": "<p>Swedish Foundation description goes here.</p>"
+  }
+]
