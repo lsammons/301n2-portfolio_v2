@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>07 Sammons | Developer</title>
+    <title>11 Sammons | Developer</title>
     <meta name="description" content="Web Design and Development Portfolio Website for Laura Sammons, Seattle WA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
@@ -44,9 +44,9 @@
 
         <nav class="main-nav icon-menu">
           <ul>
-            <li class="tab" data-content="about"><a href="#" class="icon-home"> Home</a></li>
-            <li class="tab" data-content="projects"><a href="#"class="icon-rocket"> Projects</a></li>
-            <li class="tab" data-content="contact"><a href="#"class="icon-power"> Contact</a></li>
+            <li class="tab" data-content="about"><a href="/" class="icon-home"> Home</a></li>
+            <li class="tab" data-content="projects"><a href="/projects" class="icon-rocket"> Projects</a></li>
+            <li class="tab" data-content="contact"><a href="/contact" class="icon-power"> Contact</a></li>
           </ul>
         </nav>
 
@@ -110,10 +110,14 @@
     <!--JAVASCRIPT BELOW-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
       <script>if (!window.jQuery) { document.write('<script src="./vendor/scripts/jquery/jquery-2.2.3.min.js"><\/script>'); }</script>
+    <script src="./vendor/scripts/page.js"></script>
+    <script src="./scripts/aboutController.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
       <script>if (!window.Handlebars) { document.write('<script src="./vendor/scripts/handlebars.js"><\/script>'); }</script>
     <script src="./scripts/project.js"></script>
     <script src="./scripts/projectView.js"></script>
-    <script>Project.fetchAll(projectView.initIndexPage);</script>
+    <script src="./scripts/projectController.js"></script>
+    <script src="./scripts/contactController.js"></script>
+    <script src="./scripts/routes.js"></script>
   </body>
 </html>
