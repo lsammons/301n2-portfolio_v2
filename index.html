@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-    <!--HANDLEBARS TEMPLATE-->
+    <!--PROJECTS HANDLEBARS TEMPLATE-->
     <script id="rawData-template" type="text/x-handlebars-template">
       <div id="aProject">
         <article class="{{category}}" data-category="{{category}}">
@@ -31,9 +31,21 @@
         </article>
       </div>
     </script>
-    <!--END HANDLEBARS-->
+    <!--GITHUB HANDLEBARS TEMPLATE-->
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last updated: {{updated_at}}</p>
+        <!-- LOOK: A Handlebars `if` block!-->
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
   </head>
-
   <body>
       <header class="site-header clearfix">
 
@@ -47,6 +59,8 @@
             <li class="tab" data-content="about"><a href="/" class="icon-home"> Home</a></li>
             <li class="tab" data-content="projects"><a href="/projects" class="icon-rocket"> Projects</a></li>
             <li class="tab" data-content="contact"><a href="/contact" class="icon-power"> Contact</a></li>
+            <li class="tab" data-content="github"><a href="/github" class="icon-power"> Github</a></li>
+
           </ul>
         </nav>
 
@@ -99,7 +113,21 @@
               </ul>
           </section>
         </section>
+        <!--Portfolio Projects Content Placeholder below-->
         <section class="content-placeholder"></section>
+        <!--Github Repo Content Placeholder below-->
+        <section id="github" class="tab-content">
+          <header>
+          Welcome to my Github Page
+          </header>
+          <section>
+            <h1>Check out my Projects on GitHub:</h1>
+            <ul>
+              <li>Coding</li>
+            </ul>
+          </section>
+      </section>
+        <!-- placeholder for LinkedIn repo view -->
       </main>
 
       <footer class="clearfix">
@@ -111,13 +139,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
       <script>if (!window.jQuery) { document.write('<script src="./vendor/scripts/jquery/jquery-2.2.3.min.js"><\/script>'); }</script>
     <script src="./vendor/scripts/page.js"></script>
+    <script src="./scripts/gitToken.js"></script>
+    <!-- Home/About app landing page -->
     <script src="./scripts/aboutController.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
       <script>if (!window.Handlebars) { document.write('<script src="./vendor/scripts/handlebars.js"><\/script>'); }</script>
+    <!-- Script files for the Portfolio Projects: -->
     <script src="./scripts/project.js"></script>
     <script src="./scripts/projectView.js"></script>
     <script src="./scripts/projectController.js"></script>
+    <!-- Script files for the Contact page: -->
     <script src="./scripts/contactController.js"></script>
+    <!-- Script files for the Github repos: -->
+    <script src="./scripts/repo.js"></script>
+    <script src="./scripts/repoView.js"></script>
+    <script src="./scripts/repoController.js"></script>
+
+    <!-- Page.js router -->
     <script src="./scripts/routes.js"></script>
   </body>
 </html>
