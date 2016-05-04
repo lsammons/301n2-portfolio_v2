@@ -22,4 +22,8 @@ This portfolio site that will highlight my projects and interests, and showcase 
   13. Projects display one per row on mobile, viewer can see details easily.
   14. Use a template to easily create multiple portfolio projects programmatically.
   15. Use AJAX calls and JSON to hold project information.
+# FUNCTIONAL PROGRAMMING: map, filter, reduce
   16. Apply functional programming principles to the javascript to improve performance and integrity.
+  17. Abstract out repeating code blocks into templates
+  18. Wrap modules in IFFE, export interface methods
+  
